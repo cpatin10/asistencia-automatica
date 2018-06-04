@@ -103,6 +103,11 @@ passport.deserializeUser((user, done) => {
 
 const app = express();
 const port = process.env.PORT || 3001;
+
+// Se debe agregar al back 
+app.use(express.static(__dirname + '/views'));
+// hasta acá se agrega al back
+
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(flash());
 app.set('view engine', 'ejs');
