@@ -27,36 +27,34 @@
   	 </div>
      
        
-  	 <div>
+  
      
-     <div class="caja_central">
+     <div class="caja_central_buscar">
      
-     <!-- esto debe ir en un form (son dos form o una?) -->
+     	<div class="radio_botton_1">
+        	<input name="Buscar estudiante" type="radio" value="Buscar_estudiante" checked>
+        	Buscar Estudiante<br><br>
+            <input name="" type="radio" disabled value="Buscar_estudiante"> Buscar Curso
+        </div>     
      
-     <span>Buscar estudiante:</span><br>
-     <input class="campo_captura" type="text" name="name" placeholder=""><br>
-     <div class="boton_enviar">         
-     	 <input class="boton_asist" type="submit" value="Buscar">
-     </div>
-     
-     <br>
-     
-     <span>Buscar curso:</span><br>
-     <input class="campo_captura" type="text" name="name" placeholder=""><br>
-     <div class="boton_enviar">         
-     	 <input class="boton_asist" type="submit" value="Buscar">
-     </div>
+     	<div class="radio_botton_2">
+        	<span>Texto a cambiar dependiendo de la opcion</span><br>
+            <input class="campo_captura" type="text" name="name" placeholder="">
+     		<input class="boton_asist" type="submit" value="Buscar">
+       
+
+	</div>
+    
      
      <!-- hasta acá va el form -->
      
-     <br><br><br><br><br><br>
-     
-     </div>
+      </div>
      
      <br><br><br><br>
      
      <div>
      </div>
+     </div></div> 
       
     <% include bootstrap.ejs %>
 	

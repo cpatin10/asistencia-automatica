@@ -89,7 +89,6 @@ body{
 	background-color: #FFF;
 	margin: auto;
 	width: 960px;
-	height: 400px;
 	overflow: hidden;
 	}
 
@@ -253,3 +252,44 @@ body{
 	font-family: 'RobotoCondensed-light', sans-serif;
 	color: #777777;
 	}
+
+.radio_botton_1{
+	float: left;
+	width: 250px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #EAE7D5;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	}
+
+.radio_botton_2{
+	float: left;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 25px;
+	}
+
+.caja_central_buscar{
+	background-color: #F9F8F3;
+	margin: auto;
+	width: 90%;
+	border: 1px solid #EAE7D5;
+	padding-top: 30px;
+	padding-right: 40px;
+	padding-bottom: 30px;
+	padding-left: 40px;
+	overflow: hidden;
+	}
+	
+.alert-info {
+	color: #0c5460;
+	background-color: #d1ecf1;
+	border-color: #bee5eb;
+	width: 50%;
+	margin-top: 100px;
+	margin-right: auto;
+	margin-bottom: 100px;
+	margin-left: auto;
+}
