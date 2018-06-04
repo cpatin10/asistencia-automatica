@@ -153,7 +153,7 @@ app.get('/perfil', (req, res, next) => {
 	res.render('perfil', { loggedIn });
 });
 
-// Hasta se agrega al backend
+// Hasta acá se agrega al backend
 
 app.get('/login', (req, res) => {
 	loggedIn = true;

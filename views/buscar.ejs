@@ -22,7 +22,7 @@
      	</div>
      	<div class="tit_asis_ppal">
      	<span class="titulo_content">Bienvenido al Buscador: </span><br>
-     	<span class="subtitulo">(escriba criterio a buscar)</span><br><br>
+     	<span class="subtitulo">(escoja criterio a buscar)</span><br><br>
      	</div>
   	 </div>
      
@@ -31,21 +31,25 @@
      
      <div class="caja_central">
      
-  	 <form action="/createStudent" method="POST" enctype="multipart/form-data">
-    
-    	 <span>Nombre del estudiante:</span><br>
-         <input class="campo_captura" type="text" name="name" placeholder=""> <br>
-         
-         
-         <input class="select_atta" type="file" name="picture" accept="application/x-zip-compressed,image/*">
-         <br>
-         <br>
-         <br>
-         <div class="boton_enviar">         
-     	 <input class="boton_asist" type="submit" value="Enviar">
-         </div>
+     <!-- esto debe ir en un form (son dos form o una?) -->
      
-     </form>
+     <span>Buscar estudiante:</span><br>
+     <input class="campo_captura" type="text" name="name" placeholder=""><br>
+     <div class="boton_enviar">         
+     	 <input class="boton_asist" type="submit" value="Buscar">
+     </div>
+     
+     <br>
+     
+     <span>Buscar curso:</span><br>
+     <input class="campo_captura" type="text" name="name" placeholder=""><br>
+     <div class="boton_enviar">         
+     	 <input class="boton_asist" type="submit" value="Buscar">
+     </div>
+     
+     <!-- hasta acá va el form -->
+     
+     <br><br><br><br><br><br>
      
      </div>
      
