@@ -145,6 +145,14 @@ app.get('/cursos', (req, res, next) => {
 	res.render('cursos', { loggedIn });
 });
 
+app.get('/buscar', (req, res, next) => {
+	res.render('buscar', { loggedIn });
+});
+
+app.get('/perfil', (req, res, next) => {
+	res.render('perfil', { loggedIn });
+});
+
 // Hasta se agrega al backend
 
 app.get('/login', (req, res) => {

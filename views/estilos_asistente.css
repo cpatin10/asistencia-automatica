@@ -239,3 +239,17 @@ body{
 	height: 55px;
 	width: 60px;	
 	}
+	
+.ico_asis_buscar{
+	background-image: url(img/buscador.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	float: left;
+	height: 55px;
+	width: 60px;	
+	}
+
+.grande{
+	font-family: 'RobotoCondensed-light', sans-serif;
+	color: #777777;
+	}

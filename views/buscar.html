@@ -18,10 +18,11 @@
   <div class="contenido_ggral">
   
   	 <div class="encabezado_asis">
-     	<div class="ico_asis_perfil">
+     	<div class="ico_asis_buscar">
      	</div>
      	<div class="tit_asis_ppal">
-     	<span class="titulo_content">Perfil: </span><br>
+     	<span class="titulo_content">Bienvenido al Buscador: </span><br>
+     	<span class="subtitulo">(escriba criterio a buscar)</span><br><br>
      	</div>
   	 </div>
      
@@ -29,13 +30,22 @@
   	 <div>
      
      <div class="caja_central">
-          <br><br><br><br>
-     <br><br><br><br>
-     <br><br><br><br><br><br><br><br><br><br><br><br>
-  	 colocar aquí codigo de perfil
-     <br><br><br><br>
-     <br><br><br><br>
-     <br><br><br><br><br><br><br><br><br><br><br><br>
+     
+  	 <form action="/createStudent" method="POST" enctype="multipart/form-data">
+    
+    	 <span>Nombre del estudiante:</span><br>
+         <input class="campo_captura" type="text" name="name" placeholder=""> <br>
+         
+         
+         <input class="select_atta" type="file" name="picture" accept="application/x-zip-compressed,image/*">
+         <br>
+         <br>
+         <br>
+         <div class="boton_enviar">         
+     	 <input class="boton_asist" type="submit" value="Enviar">
+         </div>
+     
+     </form>
      
      </div>
      
