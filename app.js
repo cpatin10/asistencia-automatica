@@ -21,6 +21,7 @@ mongoose.connection.on("error", err => console.log("Database connection error: "
 AWS.config.update({
 	region: 'us-east-2'
 });
+
 const rekognition = new AWS.Rekognition();
 
 const storage = multer.diskStorage({
@@ -130,6 +131,8 @@ app.get('/', (req, res, next) => {
 });
 
 
+// Agregar al backend
+
 app.get('/estudiantes', (req, res, next) => {
 	res.render('estudiantes', { loggedIn });
 });
@@ -137,6 +140,12 @@ app.get('/estudiantes', (req, res, next) => {
 app.get('/asistencia', (req, res, next) => {
 	res.render('asistencia', { loggedIn });
 });
+
+app.get('/cursos', (req, res, next) => {
+	res.render('cursos', { loggedIn });
+});
+
+// Hasta se agrega al backend
 
 app.get('/login', (req, res) => {
 	loggedIn = true;

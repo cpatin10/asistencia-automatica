@@ -179,6 +179,63 @@ body{
 	border-radius: 5px 5px 5px 5px;
 	-webkit-border-radius:  5px 5px 5px 5px;
 	}
-	
+
+.text_area_asis{
+	padding: 5px;
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border: 1px solid #EAE7D5;
+	border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius:  5px 5px 5px 5px;
+	}
+
+.encabezado_asis{
+	width: 90%;
+	overflow: hidden;
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	margin-left: auto;
+	}
+
+.ico_asis_estudiante{
+	background-image: url(img/estudiante.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	float: left;
+	width: 60px;
+	height: 55px;
+	}
+
+.tit_asis_ppal{
+	float: left;
+	}
+
+.ico_asis_perfil{
+	background-image: url(img/perfil.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	float: left;
+	height: 55px;
+	width: 60px;	
+	}
 
 
+.ico_asis_asistencia{
+	background-image: url(img/asistencia.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	float: left;
+	height: 55px;
+	width: 60px;	
+	}
+
+.ico_asis_cursos{
+	background-image: url(img/cursos.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	float: left;
+	height: 55px;
+	width: 60px;	
+	}
