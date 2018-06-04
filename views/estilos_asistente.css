@@ -26,8 +26,9 @@
 body{
 	margin: 0;
 	font-family: 'RobotoCondensed-Regular', sans-serif;
-	font-size: 13px;
+	font-size: 15px;
 	background-color: #F9F8F3;
+	color: #4E4E4E;
 }
 
 .nombre_aplica{
@@ -133,26 +134,51 @@ body{
 
 .boton_asist{
 	font-family: 'RobotoCondensed-Regular', sans-serif;
-	font-size: 14px;
-	font-weight: bold;
+	font-size: 16px;
+	font-weight: normal;
 	color: #FFF;
 	text-decoration: none;
 	background-color: #55CAAA;
 	text-align: center;
 	height: 35px;
-	padding-top: 5px;
-	padding-right: 15px;
+	padding-top: 3px;
+	padding-right: 30px;
 	padding-bottom: 5px;
-	padding-left: 15px;
+	padding-left: 30px;
 	border: 1px solid #55CAAA;
 	border-radius: 5px 5px 5px 5px;
 	-webkit-border-radius: 5px 5px 5px 5px;
+	text-transform: lowercase;
+	letter-spacing: 3px;
+	}
+
+.boton_enviar{
+	text-align: center;
+	margin: auto;
+	width: 100%;
 	}
 
 .caja_central{
 	background-color: #F9F8F3;
 	margin: auto;
-	padding: 15px;
 	width: 60%;
 	border: 1px solid #EAE7D5;
+	padding-top: 30px;
+	padding-right: 40px;
+	padding-bottom: 30px;
+	padding-left: 40px;
 	}
+	
+.campo_captura{
+	padding: 5px;
+	height: 37px;
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border: 1px solid #EAE7D5;
+	border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius:  5px 5px 5px 5px;
+	}
+	
+
+

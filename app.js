@@ -134,6 +134,10 @@ app.get('/estudiantes', (req, res, next) => {
 	res.render('estudiantes', { loggedIn });
 });
 
+app.get('/asistencia', (req, res, next) => {
+	res.render('asistencia', { loggedIn });
+});
+
 app.get('/login', (req, res) => {
 	loggedIn = true;
 	req.flash('success', 'Welcome!');
