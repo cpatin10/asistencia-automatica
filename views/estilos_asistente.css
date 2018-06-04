@@ -306,13 +306,13 @@ body{
 }
 
 .nombre_aplica{
-	background-color: #990000;
+	background-color: #777777;
 	background-image: url(img/fond_asitencia.png)!important;
 	background-repeat: repeat;
 	width: 100%;
 	text-align: center;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	background-position: center center;
 	overflow: hidden;
 	margin: auto;
@@ -321,10 +321,10 @@ body{
 .titulo_asist{
 	text-align: center;
 	text-decoration: none;
-	background-image: url(img/titulo.png) !important;
+	background-image: url(img/titulo_mov.png) !important;
 	background-repeat: no-repeat;
 	background-position: center center;
-	height: 65px;
+	height: 90px;
 	width: 100%;
 	overflow: hidden;
 	margin: auto;
@@ -354,7 +354,7 @@ body{
 .espacio{
 	background-color: #FFF;
 	margin: auto;
-	height: 30px;
+	height: none;
 	width: 100%;
 	overflow: hidden;
 	}
@@ -384,15 +384,15 @@ body{
 	width: 100%;
 	overflow: hidden;
 	margin: auto;
-	padding-top: 40px;
-	padding-right: 20px;
-	padding-bottom: 40px;
-	padding-left: 20px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
 	clear: both;
 	}
 	
 .titulo_content{
-	font-size: 40px;
+	font-size: 30px;
 	color: #4E4E4E;
 	text-decoration: none;
 	text-align: left;
@@ -434,13 +434,14 @@ body{
 .caja_central{
 	background-color: #F9F8F3;
 	margin: auto;
-	width: 60%;
+	width: 90%;
 	border: 1px solid #EAE7D5;
 	padding-top: 30px;
-	padding-right: 40px;
+	padding-right: 20px;
 	padding-bottom: 30px;
-	padding-left: 40px;
+	padding-left: 20px;
 	}
+
 	
 .campo_captura{
 	padding: 5px;
@@ -468,58 +469,65 @@ body{
 	overflow: hidden;
 	margin-top: auto;
 	margin-right: auto;
-	margin-bottom: 50px;
+	margin-bottom: 10px;
 	margin-left: auto;
 	}
 
 .ico_asis_estudiante{
-	background-image: none;
+	background-image: url(img/estudiante_mov.png);
 	background-repeat: no-repeat;
 	background-position: left center;
 	float: left;
-	width: none;
-	height: none;
+	height: 28px;
+	width: 35px;
+	margin-top: 10px;
 	}
 
 .tit_asis_ppal{
-	float: left;
+	float: none;
+	width: 100%;
+	margin: auto;
 	}
 
 .ico_asis_perfil{
-	background-image: none;
+	background-image: url(img/perfil_mov.png);
 	background-repeat: no-repeat;
 	background-position: left center;
 	float: left;
-	height: none;
-	width: none;	
+	height: 28px;
+	width: 35px;
+	margin-top: 10px;
 	}
 
 
 .ico_asis_asistencia{
-	background-image: none;
+	background-image: url(img/asistencia_mov.png);
 	background-repeat: no-repeat;
 	background-position: left center;
 	float: left;
-	height: none;
-	width: none;	
+	height: 28px;
+	width: 35px;
+	margin-top: 10px;	
 	}
 
 .ico_asis_cursos{
-	background-image: none;
+	background-image: url(img/cursos_mov.png);
 	background-repeat: no-repeat;
 	background-position: left center;
 	float: left;
-	height: none;
-	width: none;	
+	height: 28px;
+	width: 35px;
+	margin-top: 10px;
 	}
 	
 .ico_asis_buscar{
-	background-image: none;
+	background-image: url(img/buscador_mov.png);
 	background-repeat: no-repeat;
 	background-position: left center;
 	float: left;
-	height: none;
-	width: none;	
+	height: 28px;
+	width: 35px;
+	margin-top: 10px;	
 	}
 
 .grande{
@@ -546,6 +554,7 @@ body{
 	padding-right: 15px;
 	padding-bottom: 15px;
 	padding-left: 25px;
+	padding-top: 15px;
 	}
 
 .caja_central_buscar{
