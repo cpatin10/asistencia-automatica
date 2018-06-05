@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<% include partials/head.ejs %>
+
+<body>
+
+    <% include partials/navbar.ejs %>
+
+    <div class="contenido_ggral">
+  
+        <div class="encabezado_asis">
+            <div class="ico_asis_asistencia">
+            </div>
+            <div class="tit_asis_ppal">
+               <span class="titulo_content">Asistencia:</span><br>
+            </div>
+        </div>          
+         
+        <div>           
+            <div class="caja_central">
+
+                <span class="titulo_caja">Tomar asistencia:</span><br><br>
+           
+                <form action="/manageAttendance" method="POST" enctype="multipart/form-data">           
+                    <span>Curso:</span><br>
+                    <!-- <input class="campo_captura" type="text" name="name" id="coursename"><br>  -->
+                    <div class="dropdown">
+                        <select id="coursename">
+                            <% for (const course of courses) { %>
+                                <option value="<%= course.name %>">
+                                    <%= course.name %>
+                                </option>
+                            <% } %>
+                        </select>
+                    </div>            
+                    
+                    <span>Etiqueta registro:</span><br>
+                    <span class="explicacion_pequeña">Si la etiqueta ya fue utilizada, 
+                        solo se añadiran las personas presentes en la nueva foto al registro anterior.</span><br>
+                    <input class="campo_captura" type="text" name="label" id="picturelabel"><br>   
+                    
+                    <span>Foto:</span><br>
+                    <input class="select_atta" type="file" name="picture" id="picture" accept="application/x-zip-compressed,image/*">
+                    <br><br><br>
+                    <div class="boton_enviar">         
+                        <input class="boton_asist" type="submit" value="Enviar">
+                    </div>            
+                </form>      
+           </div>
+           
+           <br><br><br><br>           
+           <div></div>
+        </div>        
+    </div> 
+
+    <% include partials/bootstrap.ejs %>
+
+    <% include partials/footer.ejs %>
+
+</body>
+
+</html>

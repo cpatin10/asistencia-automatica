@@ -1,0 +1,81 @@
+
+<div class="nombre_aplica">
+    <div class="titulo_asist"></div>
+  </div>  
+  
+  <div class="menu_ppal"> 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+              <% if (loggedIn) { %>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/profile"><span class="grande">&nbsp;I&nbsp;</span> Perfil <span class="grande">&nbsp;I&nbsp;</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/courses"><span class="grande">&nbsp;I&nbsp;</span> Cursos <span class="grande">&nbsp;I&nbsp;</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/attendance"><span class="grande">&nbsp;I&nbsp;</span> Asistencia <span class="grande">&nbsp;I&nbsp;</span></a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="/registers"><span class="grande">&nbsp;I&nbsp;</span> Registros <span class="grande">&nbsp;I&nbsp;</span></a>
+                    </li>
+                    <li class="nav-item">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout"><span class="grande">&nbsp;I&nbsp;</span> Salir <span class="grande">&nbsp;I&nbsp;</span></a>
+                    </li>
+              <% } else { %>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/login">Login</a>
+                  </li>
+              <%  } %>
+          </ul>
+      </div>
+  </nav>
+  </div>
+
+  <br>
+  
+   <% if(messages.danger) { %>
+      <div class="alert alert-danger alert alert-dismissible fade show" role="alert">
+          <%= messages.danger %>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+      </div>    
+  <% } %>
+
+
+<% if(messages.danger) { %>
+    <div class="alert alert-danger alert alert-dismissible fade show" role="alert">
+        <%= messages.danger %>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>    
+<% } %>
+
+<% if(messages.success) { %>
+    <div class="alert alert-success alert alert-dismissible fade show" role="alert">
+        <%= messages.success %>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+<% } %>
+
+<% if(messages.info) { %>
+    <div class="alert alert-info alert alert-dismissible fade show" role="alert">
+        <%= messages.info %>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>    
+<% } %>
